@@ -3,5 +3,6 @@
   hosts: all
   tasks:
     - name: copy file
+      copy:
       src: /tmp/testfile.txt
       dest: /tmp/testfile.txt
