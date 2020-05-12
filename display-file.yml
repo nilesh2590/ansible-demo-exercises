@@ -1,0 +1,6 @@
+-
+ name: display command output
+ hosts: all
+ tasks:
+  - name: display command output
+    command: cat resolv.conf chdir=/etc
