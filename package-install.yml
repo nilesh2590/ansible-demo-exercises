@@ -1,0 +1,10 @@
+-
+ name: install http
+ hosts: all
+ tasks:
+  - name: install http
+    yum:
+     name: httpd
+     state: present
+    become: yes
+    become_user: root
