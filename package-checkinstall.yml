@@ -1,9 +1,0 @@
--
- name: check http
- hosts: all
- tasks:
-  - name: check http
-    service:
-     name: httpd
-     state: started
-    become: yes
