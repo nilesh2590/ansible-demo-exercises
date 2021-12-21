@@ -1,0 +1,12 @@
+---
+  - name: check loop
+    hosts: localhost
+    become: yes
+    tasks:
+      - user: "name='{{item}}' state=present"
+        loop: 
+          - joe
+          - rakesh
+          - sharma
+          - rohan
+          - verma

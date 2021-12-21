@@ -4,5 +4,5 @@
   tasks:
     - name: copy file
       copy:
-        src: /tmp/testfile.txt
+        src: /var/tmp/testfile.txt
         dest: /tmp/testfile.txt
